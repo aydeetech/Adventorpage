@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Mansalva&family=Palanquin+Dark:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: url(./images/mouse\ \(1\).png), auto;
+}
+
+:root {
+  --blue: hsla(194, 100%, 57%, 1);
+  --light: hsla(127, 66%, 96%, 1);
+  --white: #fff;
+  --gold: hsla(39, 86%, 55%, 1);
+  --deep-cyan: hsla(126, 50%, 11%, 1);
+  --red: hsla(7, 86%, 55%, 1);
+  --grey: hsla(0, 0%, 43%, 1);
+}
+
+/* Utilities */
+
+li {
+  list-style: none;
+}
+a {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--light);
+  line-height: 1.5rem;
+  cursor: url(./images/pointer.png);
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: var(--gold);
+  cursor: url(./images/pointer.png), auto;
+}
+
+.slim {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+}
+
+.text-secondary {
+  color: var(--grey);
+}
+.italics {
+  font-family: "Mansalva", sans-serif;
+}
+.heading {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-weight: 700;
+  font-size: 5.313rem;
+  color: var(--light);
+}
+
+span {
+  color: var(--red);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.my-4 {
+  margin-block: 1.5rem;
+}
+
+.py-3 {
+  padding-inline: 1rem;
+}
+
+.btn {
+  background-color: var(--gold);
+  color: var(--light);
+  /* width: 8rem; */
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.4s ease;
+  cursor: url(./images/pointer.png), auto;
+}
+
+.btn:hover {
+  background-color: var(--deep-cyan);
+  color: var(--gold);
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+}
+
+.text-primary {
+  font-size: 1.875rem;
+  color: var(--blue);
+}
+
+.text-navy {
+  color: var(--deep-cyan);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+/* Navbar  */
+
+.navbar {
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 7.5rem 1rem 10rem;
+}
+
+nav {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-links {
+  justify-content: space-between;
+  gap: 3rem;
+  color: var(--light);
+}
+.nav-btn {
+  padding: 1rem 3rem;
+  margin-inline: 6rem 1rem;
+}
+
+/* Hero */
+.hero-section {
+  background: url(./images/Rectangle\ 6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.hero {
+  padding: 5rem 10rem;
+}
+
+.hero-p {
+  color: var(--light);
+  font-size: 2.5rem;
+}
+
+.hero-p1 {
+  color: var(--light);
+  padding-inline: 20.8rem;
+}
+
+.hero-btn {
+  margin-block: 2rem;
+  padding: 1rem 5rem;
+}
+
+/* Showcase */
+.showcase {
+  padding-block: 3rem 20rem;
+  text-align: center;
+  width: 100%;
+  background: url(./images/Rectangle\ 7.svg);
+  background-size: cover;
+}
+
+.showcase-ideas {
+  gap: 4rem;
+  padding-inline: 6rem;
+}
+.showcase .heading {
+  font-size: 3.125rem;
+}
+
+.ideas {
+  text-align: justify;
+}
+
+.ideas img.illustration {
+  width: 100%;
+}
+
+.rating {
+  justify-content: space-between;
+}
+.ideas .heading {
+  font-size: 1.6rem;
+}
+
+.ideas p.slim {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+.ideas-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding-block: 1rem;
+}
+
+/* tour cont */
+
+.tour-container {
+width: 100%;
+  padding: 8rem;
+  gap: 1.5rem;
+  position: relative;
+}
+
+/* .tour-container .grid-2 {
+  place-items: center;
+} */
+
+.tour-text {
+  background-color: var(--white);
+  text-align: left;
+  padding: 4rem;
+  width: 45.563rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.tour-text .heading {
+  /* padding-right: 30rem; */
+  line-height: 1.5;
+}
+
+.tour-text p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding-right: 7rem;
+  margin-top: 2rem;
+}
+
+.tour-img {
+  position: relative;
+  right: 6rem;
+  top: 20rem;
+}
+
+/* .tour-img img {
+  width: 45rem;
+} */
+
+/* testimonials */
+
+.testimonials {
+  position: relative;
+  text-align: center;
+  padding: 5rem;
+  width: 100%;
+}
+
+.testimonials img {
+  margin-block: 2rem 0;
+}
+
+.testimonials h2 {
+  font-weight: 700;
+  font-size: 3.125rem;
+}
+
+.client-name {
+  font-size: 1.75rem;
+}
+
+.tourist {
+  font-size: 1.625rem;
+  margin-top: 1rem;
+}
+.remarks {
+  padding-inline: 20rem;
+  margin-block: 2rem;
+}
+
+.remarks::before {
+  content: url(./images/Vector.svg);
+  position: relative;
+  right: 8rem;
+  top: 3.5rem;
+}
+
+.remarks::after {
+  content: url(./images/akar-icons_arrow-up.svg);
+  position: absolute;
+  right: 20rem;
+  bottom: 13.5rem;
+}
+
+/* Footer */
+footer {
+  padding: 3rem 4rem 1rem 4rem;
+  background-color: var(--deep-cyan);
+  color: var(--white);
+}
+.footer-container {
+  grid-template-columns: repeat(3,1fr);
+  gap: 6.5rem;
+  padding-block: 1rem;
+}
+
+.summary {
+  width: 100%;
+}
+
+.summary h2 {
+  /* margin-block: 1rem; */
+  width: 100%;
+}
+
+.summary p {
+  line-height: 1.8;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.grid-2 {
+  margin-top: 1.3rem;
+  line-height: 1.5;
+  font-size: 1.125rem;
+}
+
+.grid-2 li {
+  margin-top: 1rem;
+  cursor: url(./images/pointer.png), auto;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.grid-2 li:hover {
+  color: var(--gold);
+  cursor: url(./images/pointer.png), auto;
+}
+
+.subscribe {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+input {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--white);
+  padding: 1.4rem 14rem 1.4rem 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0 0 2rem 0 var(--gold);
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.embed {
+  padding: 0.8rem;
+  position: relative;
+  left: 18em;
+  bottom: 3.6rem;
+}
+
+.socials {
+  margin-top: 1rem;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.terms {
+  margin-right: 3rem;
+}

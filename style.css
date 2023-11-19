@@ -621,7 +621,7 @@ body {
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1;
   }
   .hero-p {
@@ -634,8 +634,9 @@ body {
   }
 
   .hero-p1 {
-    padding-inline: 0.5rem;
+    padding-inline: 1rem;
     margin-top: 0.5rem;
+
   }
 
   .hero-btn {

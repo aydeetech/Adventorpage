@@ -340,11 +340,13 @@ footer {
   padding: 3rem 4rem 1rem 4rem;
   background-color: var(--deep-cyan);
   color: var(--white);
+  overflow: visible;
 }
 .footer-container {
   grid-template-columns: repeat(3, 1fr);
   gap: 6.5rem;
   padding-block: 1rem;
+  overflow: visible;
 }
 
 .summary {

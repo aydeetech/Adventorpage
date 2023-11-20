@@ -470,7 +470,7 @@ body {
     overflow: visible;
   }
   .navbar {
-    padding: 3rem 5rem 1rem 4rem;
+    padding: 4rem 5rem 1rem 4rem;
     overflow: visible;
   }
 
@@ -497,7 +497,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    padding-block: 1rem 1.6rem;
+    padding-block: 1rem ;
     padding-inline: 3%;
     background-color: var(--deep-cyan);
     border-top: 0.2rem solid var(--gold);
@@ -512,7 +512,7 @@ body {
 
   .view {
     visibility: visible;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease-in-out;
   }
 
   nav ul {
